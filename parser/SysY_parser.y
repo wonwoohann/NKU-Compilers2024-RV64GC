@@ -22,6 +22,8 @@ extern IdTable id_table;
     Def def;  std::vector<Def>* defs;
     FuncDef func_def;
     Expression expression;  std::vector<Expression>* expressions;
+//Expression expression;：单个表达式的指针，指向某一个 __Expression 实例。
+//std::vector<Expression>* expressions;：这是一个指针，指向一个 std::vector 容器，而这个容器可以存储多个表达式指针（Expression）。
     Stmt stmt;
     Block block;
     InitVal initval;  std::vector<InitVal>* initvals;
