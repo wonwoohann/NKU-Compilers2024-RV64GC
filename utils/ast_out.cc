@@ -4,6 +4,7 @@
 std::string type_status[5] = {"Void", "Int", "Float", "Bool", "Ptr"};
 
 std::string Type::GetTypeInfo() { return "Type: " + type_status[type]; }
+//把type转换成整数了，实质是枚举型变量
 
 std::string ConstValue::GetConstValueInfo(Type ty) {
     if (!ConstTag) {
