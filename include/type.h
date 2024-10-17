@@ -11,6 +11,7 @@ public:
     enum ty { VOID = 0, INT = 1, FLOAT = 2, BOOL = 3, PTR = 4, DOUBLE = 5 } type;
 //枚举型变量，名称是ty，声明名为type的变量，type赋值为double等
     std::string GetTypeInfo();
+//在ast_out.cc定义
     Type() { type = VOID; }
 };
 
