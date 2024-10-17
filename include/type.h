@@ -9,7 +9,8 @@ class Type {
 public:
     // 我们认为数组的类型为PTR
     enum ty { VOID = 0, INT = 1, FLOAT = 2, BOOL = 3, PTR = 4, DOUBLE = 5 } type;
-    std::string GetTypeInfo();
+//枚举类型，名称是ty，声明名为type的变量，type可以赋值为double等，type类型是enum ty
+    std::string GetTypeInfo();//在Ast_out.cc中定义
     Type() { type = VOID; }
 };
 
@@ -22,7 +23,7 @@ public:
         float FloatVal;
         double DoubleVal;
     } val;
-    std::string GetConstValueInfo(Type ty);
+    std::string GetConstValueInfo(Type ty);//在Ast_out.cc中定义
     ConstValue() {
         val.IntVal = 0;
         ConstTag = false;
