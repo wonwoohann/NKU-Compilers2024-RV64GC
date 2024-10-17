@@ -14,6 +14,7 @@
 // (修改后记得修改SysY_parser.y中的定义)
 
 // exp basic_class
+//tree node在tree.h中定义
 class __Expression : public tree_node {
 public:
 };
